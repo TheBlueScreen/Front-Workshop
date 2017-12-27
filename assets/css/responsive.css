@@ -1,0 +1,79 @@
+@media only screen and (min-width: 48em) {
+
+}
+
+@media only screen and (min-width: 62em) {
+    .container {
+        width: inherit;
+    }
+    header .header-content form{
+        text-align: right;
+    }
+
+    header .header-content logo{
+        float: left;
+    }
+
+    header nav.menu{
+        background-color: #f7f8fa;
+        border-top: 1px solid #cccccc;
+        border-bottom: 2px solid #cccccc;
+        height: 45px;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    header .menu ul{
+        list-style: none;
+        padding: 0;
+        line-height: 3;
+        margin: 0;
+    }
+
+    header .menu ul li{
+        float: right;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    header .menu ul li a{
+        color: #424242;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    header .menu ul li:hover>a, header .menu ul li.active>a{
+        color: #ff0000;
+    }
+
+    header .menu ul li:hover .menu-content{
+        height: 200px;
+    }
+
+    header .menu ul li a span.fa{
+        margin-right: 10px;
+    }
+
+    header .menu .menu-content{
+        width: 500px;
+        background-color: #ffffff;
+        position: absolute;
+        box-shadow: 0 0 10px #ccc;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: all 1s;
+    }
+
+    header .menu .menu-content>.row{
+        margin: 10px;
+    }
+
+    header .menu .menu-content .menu-preview-container{
+        display: none;
+    }
+
+    header .menu .menu-content .menu-preview-container.active{
+        display: block;
+    }
+}
