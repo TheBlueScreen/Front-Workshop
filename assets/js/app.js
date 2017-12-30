@@ -12,3 +12,21 @@ $(".submenu-item a").on('click', function () {
     container.find('.active').removeClass("active");
     $("#submenu-preview-"+index).addClass("active");
 });
+
+
+$("#mobile-menu-btn").click(function () {
+    let menu = $(".mobile-menu");
+    let isOpen = menu.hasClass('active');
+
+    if(isOpen){
+        menu.removeClass("active");
+    }else{
+        menu.addClass('active');
+    }
+});
+
+$("#go-up").click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 2000);
+});

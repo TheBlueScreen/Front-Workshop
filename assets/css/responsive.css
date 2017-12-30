@@ -3,6 +3,9 @@
 }
 
 @media only screen and (min-width: 62em) {
+    header nav.mobile-menu{
+        display: none;
+    }
     .container {
         width: inherit;
     }

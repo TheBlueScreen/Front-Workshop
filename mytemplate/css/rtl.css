@@ -1,0 +1,4 @@
+html, body, table{
+    direction: rtl;
+    text-align: right;
+}
